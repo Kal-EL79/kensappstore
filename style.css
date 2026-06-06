@@ -17,3 +17,26 @@ body {
     display: block;
     margin: 0 auto;
 }
+#lock-screen {
+    text-align: center;
+    margin-top: 120px;
+    color: white;
+}
+
+#lock-screen input {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #ff00ff;
+    text-align: center;
+}
+
+#lock-screen button {
+    margin-top: 15px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    background: #ff0088;
+    color: white;
+    font-weight: bold;
+}
