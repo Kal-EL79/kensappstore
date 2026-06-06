@@ -13,3 +13,36 @@
 
 </body>
 </html>
+<body>
+
+<div id="lock-screen">
+    <h1>Enter Access Code</h1>
+    <input type="password" id="passcode" placeholder="Enter code">
+    <button onclick="unlockSite()">Enter</button>
+    <p id="error"></p>
+</div>
+
+<div id="app-store" style="display:none;">
+
+    <div class="hero-banner">
+        <img src="images/myheader.png" alt="Kens App Store">
+    </div>
+
+    <!-- Put your APK cards here later -->
+
+</div>
+
+<script>
+function unlockSite() {
+    var code = document.getElementById("passcode").value;
+
+    if (code === "61799") {
+        document.getElementById("lock-screen").style.display = "none";
+        document.getElementById("app-store").style.display = "block";
+    } else {
+        document.getElementById("error").innerText = "Incorrect Code";
+    }
+}
+</script>
+
+</body>
